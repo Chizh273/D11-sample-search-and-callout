@@ -1,0 +1,12 @@
+{% set classes = ['callout'] %}
+{% if float and float != 'none' %}
+  {% set classes = classes|merge(['callout--float-' ~ float]) %}
+{% endif %}
+<div {{ attributes.addClass(classes) }}>
+  {% if title %}
+    <h3 class="callout__title">{{ title }}</h3>
+  {% endif %}
+  <div class="callout__body">
+    {{ body }}
+  </div>
+</div>

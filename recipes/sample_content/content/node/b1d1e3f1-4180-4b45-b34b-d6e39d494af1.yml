@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1d1e3f1-4180-4b45-b34b-d6e39d494af1
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Sitemap
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>Use this sitemap to navigate through the main sections of our website.</p><h2>Main Sections</h2><ul><li>Home</li><li>About Us</li><li>Services</li><li>Blog</li><li>Contact</li></ul><h2>Resources</h2><ul><li>FAQ</li><li>Privacy Policy</li><li>Terms of Service</li><li>Accessibility</li></ul>
+    format: basic_html
+    summary: Overview of the site structure.

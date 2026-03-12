@@ -1,0 +1,217 @@
+/**
+ * @file
+ * Search modal styles.
+ */
+
+.search-modal__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color--primary-50);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color--primary-50);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.search-modal__trigger:hover,
+.search-modal__trigger:focus-visible {
+  background: var(--color--primary-50);
+  color: #fff;
+}
+
+.search-modal__dialog {
+  max-width: 40rem;
+  width: 90vw;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.25);
+}
+
+.search-modal__dialog::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+
+.search-modal__dialog-inner {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.search-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 1rem;
+}
+
+.search-modal__title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.search-modal__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color--gray-30, #636363);
+  cursor: pointer;
+  margin-inline-start: auto;
+}
+
+.search-modal__close:hover,
+.search-modal__close:focus-visible {
+  background: var(--color--gray-95, #f0f0f0);
+  color: var(--color--gray-10, #333);
+}
+
+/* Search form within modal. */
+.search-modal__content .views-exposed-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  padding-block-end: 1.25rem;
+  border-block-end: 1px solid var(--color--gray-90, #e6e6e6);
+  margin-block-end: 1.25rem;
+}
+
+.search-modal__content .views-exposed-form .form-item {
+  flex: 1;
+  margin: 0;
+}
+
+.search-modal__content .views-exposed-form .form-item__label {
+  font-size: 0.8125rem;
+  color: var(--color--gray-30, #636363);
+  margin-block-end: 0.25rem;
+}
+
+.search-modal__content .views-exposed-form .form-element {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color--gray-80, #ccc);
+  border-radius: 4px;
+  font-size: 0.9375rem;
+}
+
+.search-modal__content .views-exposed-form .form-element:focus {
+  border-color: var(--color--primary-50);
+  outline: 2px solid var(--color--primary-50);
+  outline-offset: -2px;
+}
+
+.search-modal__content .views-exposed-form .form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.search-modal__content .views-exposed-form .form-submit {
+  white-space: nowrap;
+}
+
+/* Results area. */
+.search-modal__content .view-content {
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-inline-end: 0.5rem;
+}
+
+/* Content type group headings. */
+.search-modal__content .view-content > h3 {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color--gray-30, #636363);
+  padding: 0.5rem 0.75rem;
+  margin: 1rem 0 0.25rem;
+  background: var(--color--gray-95, #f5f5f5);
+  border-radius: 4px;
+}
+
+.search-modal__content .view-content > h3:first-child {
+  margin-block-start: 0;
+}
+
+/* Result rows. */
+.search-modal__content .views-row {
+  padding: 0.625rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+
+.search-modal__content .views-row:hover {
+  background: var(--color--gray-95, #f9f9f9);
+}
+
+.search-modal__content .views-row + .views-row {
+  border-block-start: 1px solid var(--color--gray-95, #eee);
+}
+
+/* Node titles in results. */
+.search-modal__content .node__title {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.search-modal__content .node__title a {
+  color: var(--color--primary-40, #003cc5);
+  text-decoration: none;
+}
+
+.search-modal__content .node__title a:hover {
+  text-decoration: underline;
+}
+
+/* Node meta (author, date). */
+.search-modal__content .node__meta {
+  font-size: 0.8125rem;
+  color: var(--color--gray-30, #636363);
+  margin-block-start: 0.125rem;
+}
+
+.search-modal__content .node__meta .node__author-image {
+  display: none;
+}
+
+/* Hide empty node__content divs. */
+.search-modal__content .node__content:empty {
+  display: none;
+}
+
+/* Hide contextual links inside modal. */
+.search-modal__content .contextual {
+  display: none;
+}
+
+/* More link. */
+.search-modal__content .more-link {
+  margin-block-start: 1rem;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid var(--color--gray-90, #e6e6e6);
+  text-align: center;
+}
+
+.search-modal__content .more-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color--primary-50);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.search-modal__content .more-link a:hover {
+  text-decoration: underline;
+}

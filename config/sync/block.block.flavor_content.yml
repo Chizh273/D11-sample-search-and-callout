@@ -1,0 +1,22 @@
+uuid: 5273aff0-32cd-476b-94b3-cec05e116db2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flavor
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: flavor_content
+theme: flavor
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 689880ef-1a40-4b1f-8bda-068b1f38d7d8
+  bundle: article
+  default_langcode: en
+  depends:
+    211fd2ac-2cc2-496f-a56c-018a5fff4b20: taxonomy_term
+    f8df23e5-2b49-49e7-817f-6ae75c802b63: taxonomy_term
+    c70e2769-1ff0-4f7d-a301-5326cb7fe4d9: file
+default:
+  title:
+  - value: The History and Future of Space Exploration
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: '<p>From the first moon landing to Mars colonization: the journey of space exploration.</p><h2>A Closer Look</h2><p>When we examine this topic in detail, several important themes emerge. The first is the growing recognition that traditional approaches may no longer be sufficient to address the challenges we face.</p><p>Innovation is at the heart of the solution. New technologies, methodologies, and frameworks are being developed at an unprecedented pace, offering promising alternatives to outdated practices.</p><h2>Expert Perspectives</h2><p>Leading voices in the field offer diverse perspectives on the best path forward. While there is broad agreement on the need for action, the specific strategies and priorities vary depending on context and circumstances.</p><p>One area of consensus is the importance of data-driven decision-making. Access to reliable, timely information is essential for developing effective responses and measuring progress over time.</p><h2>Challenges and Opportunities</h2><p>Every
+      challenge also presents an opportunity. The current landscape is no exception. Organizations and individuals that are willing to adapt and innovate will be well-positioned to thrive in this evolving environment.</p><p>The key is to approach these changes with an open mind and a willingness to learn. The pace of change can be daunting, but it also offers exciting possibilities for those who are prepared to embrace them.</p>'
+    format: basic_html
+    summary: 'From the first moon landing to Mars colonization: the journey of space exploration.'
+  field_tags:
+  - entity: 211fd2ac-2cc2-496f-a56c-018a5fff4b20
+  - entity: f8df23e5-2b49-49e7-817f-6ae75c802b63
+  field_image:
+  - entity: c70e2769-1ff0-4f7d-a301-5326cb7fe4d9
+    alt: The History and Future of Space Exploration
+    title: ''
+    width: null
+    height: null

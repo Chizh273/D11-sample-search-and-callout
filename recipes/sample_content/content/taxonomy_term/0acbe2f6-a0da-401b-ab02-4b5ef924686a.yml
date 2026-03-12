@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 0acbe2f6-a0da-401b-ab02-4b5ef924686a
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Business
+  status:
+  - value: true

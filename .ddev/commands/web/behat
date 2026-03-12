@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+## Command: Run Behat tests inside the web container
+## Usage: behat [behat options and arguments]
+## Example: "ddev behat" (runs all tests)
+## Example: "ddev behat --suite=mymodule" (runs suite 'mymodule')
+## Example: "ddev behat features/myfeature.feature" (runs specific feature)
+## Example: "ddev behat --debug" (runs all tests with debug)
+## Example: "ddev behat --help" (shows Behat help)
+## ExecRaw: true
+
+set -eu -o pipefail
+
+if ! command -v behat >/dev/null; then
+  echo "Behat is not available. You may need to 'ddev composer install'"
+  exit 1
+fi
+
+# Default config path
+BEHAT_CONFIG="tests/behat/behat.yml.php"
+
+# If user did not specify --config/-c, add it
+ARGS=("$@")
+if [[ ! " ${ARGS[*]} " =~ " --config " ]] && [[ ! " ${ARGS[*]} " =~ " -c " ]]; then
+  ARGS=(--config="$BEHAT_CONFIG" "${ARGS[@]}")
+fi
+
+# Run Behat with all user arguments
+behat "${ARGS[@]}"

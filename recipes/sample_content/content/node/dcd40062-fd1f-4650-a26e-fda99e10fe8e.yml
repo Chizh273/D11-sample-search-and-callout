@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: dcd40062-fd1f-4650-a26e-fda99e10fe8e
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Our Services
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>We provide a wide range of professional services designed to help you succeed.</p><h2>Consulting</h2><p>Our experienced consultants work with you to develop strategies that drive growth and efficiency.</p><h2>Development</h2><p>From web applications to enterprise solutions, our development team delivers robust, scalable software.</p><h2>Support</h2><p>We offer 24/7 support to ensure your systems run smoothly and efficiently.</p><h2>Training</h2><p>Our training programs help your team develop the skills they need to excel.</p>
+    format: basic_html
+    summary: Overview of our professional services.

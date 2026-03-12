@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 409a1707-8d53-46bb-9660-69ea8424675f
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Music
+  status:
+  - value: true

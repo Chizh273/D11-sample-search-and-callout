@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 7f224946-6454-4ae3-a4f5-c533ded0c353
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Education
+  status:
+  - value: true

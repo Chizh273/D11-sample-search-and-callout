@@ -1,0 +1,19 @@
+name: Callout
+status: experimental
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+    body:
+      type: string
+      title: Body
+    float:
+      type: string
+      title: Float
+      description: 'Float the callout so surrounding text wraps around it.'
+      enum:
+        - none
+        - start
+        - end

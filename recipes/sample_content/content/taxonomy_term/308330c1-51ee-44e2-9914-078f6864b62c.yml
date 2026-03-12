@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 308330c1-51ee-44e2-9914-078f6864b62c
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Health
+  status:
+  - value: true

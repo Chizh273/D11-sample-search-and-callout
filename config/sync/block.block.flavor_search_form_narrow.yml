@@ -1,0 +1,23 @@
+uuid: 937c4f5e-0bb6-473c-a304-568d01f6a542
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - flavor
+_core:
+  default_config_hash: _nZjxxdypO6xrOAJkCYD81v0L7wh2zbCAVO7_C-UKIc
+id: flavor_search_form_narrow
+theme: flavor
+region: primary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

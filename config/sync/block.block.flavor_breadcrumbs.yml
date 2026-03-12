@@ -1,0 +1,22 @@
+uuid: c4b6fe91-308d-4d5e-8183-7cac755ef91e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flavor
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: flavor_breadcrumbs
+theme: flavor
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 57eeebb2-66ba-4df8-874d-b9e5930ec7b2
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Blog
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>Welcome to our blog! Here you will find the latest news, insights, and updates from our team.</p><p>Our contributors share their expertise on a wide range of topics including technology, industry trends, best practices, and more.</p><p>Stay informed and subscribe to our newsletter to receive the latest posts directly in your inbox.</p>
+    format: basic_html
+    summary: Latest news and insights from our team.

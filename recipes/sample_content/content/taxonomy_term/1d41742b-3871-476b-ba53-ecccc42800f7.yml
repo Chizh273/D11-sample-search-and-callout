@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 1d41742b-3871-476b-ba53-ecccc42800f7
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Culture
+  status:
+  - value: true

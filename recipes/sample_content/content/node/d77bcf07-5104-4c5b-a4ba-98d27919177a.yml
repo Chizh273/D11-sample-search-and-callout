@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d77bcf07-5104-4c5b-a4ba-98d27919177a
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Accessibility Statement
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>We are committed to ensuring digital accessibility for people of all abilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p><h2>Conformance Status</h2><p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA.</p><h2>Feedback</h2><p>We welcome your feedback on the accessibility of our website. Please let us know if you encounter any barriers by contacting us at accessibility@example.com.</p>
+    format: basic_html
+    summary: Our commitment to web accessibility.

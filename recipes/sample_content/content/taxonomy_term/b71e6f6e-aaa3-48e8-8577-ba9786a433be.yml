@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b71e6f6e-aaa3-48e8-8577-ba9786a433be
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Food
+  status:
+  - value: true

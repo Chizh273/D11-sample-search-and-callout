@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 18ebf38b-a616-46a3-82bb-e2e4d44434d2
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Environment
+  status:
+  - value: true

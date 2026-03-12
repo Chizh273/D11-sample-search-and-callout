@@ -1,0 +1,22 @@
+uuid: 30344fee-ced7-4b6d-9eef-68feb18826fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flavor
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: flavor_powered
+theme: flavor
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

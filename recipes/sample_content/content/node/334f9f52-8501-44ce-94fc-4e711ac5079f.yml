@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 334f9f52-8501-44ce-94fc-4e711ac5079f
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Careers
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>Join our growing team! We are always looking for talented individuals who are passionate about making a difference.</p><h2>Why Work With Us?</h2><ul><li>Competitive compensation and benefits</li><li>Flexible work arrangements</li><li>Professional development opportunities</li><li>Collaborative and inclusive culture</li></ul><h2>Current Openings</h2><p>Please check back regularly for new opportunities, or send your resume to careers@example.com.</p>
+    format: basic_html
+    summary: Explore career opportunities with us.
