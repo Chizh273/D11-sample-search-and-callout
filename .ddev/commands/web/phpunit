@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+## Description: Run phpunit inside the web container
+## Usage: phpunit [flags] [args]
+## Example: "ddev phpunit" or "ddev phpunit --stop-on-failure"
+## Example: "ddev phpunit web/modules/custom/mymodule/tests/src/Unit/MyTest.php"
+## Example: "ddev phpunit --filter testMyFunction"
+## Example: "ddev phpunit --testsuite unit"
+## ExecRaw: true
+
+set -eu -o pipefail
+
+if ! command -v phpunit >/dev/null; then
+  echo "phpunit is not available. You may need to 'ddev composer install'"
+  exit 1
+fi
+
+# Project phpunit.xml location
+PHPUNIT_CONFIG="$PWD/tests/phpunit.xml"
+
+# Use project config if available
+if [ -f "$PHPUNIT_CONFIG" ]; then
+  phpunit --configuration "$PHPUNIT_CONFIG" "$@"
+# Fallback: check if we are running a specific test or test folder
+elif [ $# -gt 0 ] && [ -e "$1" ]; then
+  TEST_PATH="$1"
+  shift
+  phpunit --bootstrap $PWD/$DDEV_DOCROOT/core/tests/bootstrap.php "$TEST_PATH" "$@"
+else
+  # Run all custom module tests
+  phpunit --bootstrap $PWD/$DDEV_DOCROOT/core/tests/bootstrap.php $DDEV_DOCROOT/$DRUPAL_PROJECTS_PATH "$@"
+fi

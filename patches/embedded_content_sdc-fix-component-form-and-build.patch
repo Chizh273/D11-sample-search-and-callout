@@ -1,0 +1,41 @@
+diff --git a/src/Plugin/EmbeddedContent/Component.php b/src/Plugin/EmbeddedContent/Component.php
+index b83b437..f110ba6 100644
+--- a/src/Plugin/EmbeddedContent/Component.php
++++ b/src/Plugin/EmbeddedContent/Component.php
+@@ -4,7 +4,6 @@ namespace Drupal\embedded_content_sdc\Plugin\EmbeddedContent;
+
+ use Drupal\embedded_content\EmbeddedContentInterface;
+ use Drupal\embedded_content\EmbeddedContentPluginBase;
+-use Drupal\cl_editorial\Form\ComponentInputToForm;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+ use Drupal\Core\Theme\ComponentPluginManager;
+@@ -50,7 +49,16 @@ class Component extends EmbeddedContentPluginBase implements EmbeddedContentInte
+    * {@inheritdoc}
+    */
+   public function build(): array {
+-    return [];
++    $component = $this->getDerivativeId();
++    $config = $this->getConfiguration();
++    $props = $config['props'] ?? [];
++    $slots = $config['slots'] ?? [];
++    return [
++      '#type' => 'component',
++      '#component' => $component,
++      '#props' => $props,
++      '#slots' => $slots,
++    ];
+   }
+
+   /**
+@@ -58,9 +66,7 @@ class Component extends EmbeddedContentPluginBase implements EmbeddedContentInte
+    */
+   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
+     $component = $this->getDerivativeId();
+-    $form = cl_editorial_component_mappings_form($component, [], $form, $form_state);
+-    $input_to_form = new ComponentInputToForm($this->componentManager, $this->formGenerator);
+-    $form += $input_to_form->buildForm($component, $form_state->getValues(), $form, $form_state);
++    $form = cl_editorial_component_mappings_form($component, $this->getConfiguration(), $form, $form_state);
+     return $form;
+   }
+

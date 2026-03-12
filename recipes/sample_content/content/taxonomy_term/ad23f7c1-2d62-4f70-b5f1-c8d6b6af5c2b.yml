@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: ad23f7c1-2d62-4f70-b5f1-c8d6b6af5c2b
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Travel
+  status:
+  - value: true

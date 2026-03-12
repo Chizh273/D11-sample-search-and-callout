@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 3f37fdcf-dbf8-49ab-ab9e-593257d50ceb
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Sports
+  status:
+  - value: true

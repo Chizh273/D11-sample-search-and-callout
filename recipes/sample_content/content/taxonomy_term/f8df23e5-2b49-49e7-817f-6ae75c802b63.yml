@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: f8df23e5-2b49-49e7-817f-6ae75c802b63
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Technology
+  status:
+  - value: true

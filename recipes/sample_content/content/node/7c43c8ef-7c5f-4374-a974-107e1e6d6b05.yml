@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7c43c8ef-7c5f-4374-a974-107e1e6d6b05
+  bundle: article
+  default_langcode: en
+  depends:
+    d306f1c5-2523-4a2f-ba71-9d764236c5aa: taxonomy_term
+    0acbe2f6-a0da-401b-ab02-4b5ef924686a: taxonomy_term
+    4246400d-94bc-4f19-bab6-042e380715b5: file
+default:
+  title:
+  - value: The Impact of Trade Policies on Global Markets
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>How international trade agreements and tariffs affect the global economy.</p><p>In recent years, this topic has gained significant attention from experts and enthusiasts alike. The rapid pace of change in our world means that staying informed has never been more important.</p><p>According to leading researchers, the developments in this area are not just incremental improvements but represent fundamental shifts in how we think about and approach these challenges.</p><h2>Key Developments</h2><p>Several key developments have shaped the current landscape. First, advances in technology have opened up new possibilities that were previously unimaginable. Second, changing societal attitudes have created demand for new solutions and approaches.</p><p>Industry leaders are investing heavily in research and development, recognizing that innovation in this space will be crucial for long-term success. The intersection of multiple disciplines is creating exciting new opportunities for collaboration.</p><h2>Looking
+      Ahead</h2><p>As we look to the future, it is clear that this field will continue to evolve rapidly. Experts predict that the next few years will bring transformative changes that will affect how we live, work, and interact with the world around us.</p><p>Whether you are a professional in this field or simply someone interested in staying informed, understanding these trends is essential for navigating the opportunities and challenges that lie ahead.</p>
+    format: basic_html
+    summary: How international trade agreements and tariffs affect the global economy.
+  field_tags:
+  - entity: d306f1c5-2523-4a2f-ba71-9d764236c5aa
+  - entity: 0acbe2f6-a0da-401b-ab02-4b5ef924686a
+  field_image:
+  - entity: 4246400d-94bc-4f19-bab6-042e380715b5
+    alt: The Impact of Trade Policies on Global Markets
+    title: ''
+    width: null
+    height: null

@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: aa91033e-972b-47c6-bd53-0bf75daac0b1
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Contact Us
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: '<p>We would love to hear from you. Whether you have a question, feedback, or a business inquiry, our team is here to help.</p><h2>Office Hours</h2><p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p><h2>Get in Touch</h2><p>Email: info@example.com<br>Phone: (555) 123-4567<br>Address: 123 Main Street, Suite 100, Anytown, ST 12345</p>'
+    format: basic_html
+    summary: Get in touch with our team.

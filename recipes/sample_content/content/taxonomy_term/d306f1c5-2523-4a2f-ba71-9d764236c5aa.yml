@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: d306f1c5-2523-4a2f-ba71-9d764236c5aa
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Politics
+  status:
+  - value: true

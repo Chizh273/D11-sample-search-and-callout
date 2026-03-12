@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: c99c2c07-530d-44b7-953e-2103a0a1f4ef
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Fashion
+  status:
+  - value: true

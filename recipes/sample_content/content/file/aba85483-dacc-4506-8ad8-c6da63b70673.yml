@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: aba85483-dacc-4506-8ad8-c6da63b70673
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: shutterstock_289654874.jpg
+  uri:
+  - value: public://shutterstock_289654874.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 7321376
+  status:
+  - value: true

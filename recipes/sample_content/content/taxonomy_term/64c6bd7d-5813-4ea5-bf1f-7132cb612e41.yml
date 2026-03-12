@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 64c6bd7d-5813-4ea5-bf1f-7132cb612e41
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Entertainment
+  status:
+  - value: true

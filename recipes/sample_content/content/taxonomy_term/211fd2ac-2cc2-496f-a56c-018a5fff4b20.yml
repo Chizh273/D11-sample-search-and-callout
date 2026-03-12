@@ -1,0 +1,11 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 211fd2ac-2cc2-496f-a56c-018a5fff4b20
+  bundle: tags
+  default_langcode: en
+default:
+  name:
+  - value: Science
+  status:
+  - value: true

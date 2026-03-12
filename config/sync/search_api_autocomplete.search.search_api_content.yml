@@ -1,0 +1,39 @@
+uuid: 62b3f367-0b25-45b6-beea-59a415033c1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - search_api.index.content
+    - views.view.search_api_content
+  module:
+    - views
+id: search_api_content
+label: 'Search API - Content'
+index_id: content
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+    view_modes:
+      'entity:node':
+        article: search_result
+        page: search_result
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:search_api_content':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

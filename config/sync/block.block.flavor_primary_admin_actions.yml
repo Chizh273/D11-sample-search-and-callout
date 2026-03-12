@@ -1,0 +1,20 @@
+uuid: 51416557-1975-4bd0-bb6c-f072d851e3fb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - flavor
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: flavor_primary_admin_actions
+theme: flavor
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

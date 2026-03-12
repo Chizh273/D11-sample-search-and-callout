@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 67bcd6ed-d5e1-432c-99ae-28b8b191216e
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Privacy Policy
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p><h2>Information We Collect</h2><p>We may collect information about you in a variety of ways, including personal data you voluntarily provide to us when you register on the site, make a purchase, or contact us.</p><h2>Use of Your Information</h2><p>We may use the information collected about you to create and manage your account, process transactions, and improve our website.</p><h2>Contact Us</h2><p>If you have questions or comments about this Privacy Policy, please contact us.</p>
+    format: basic_html
+    summary: Our commitment to protecting your privacy.

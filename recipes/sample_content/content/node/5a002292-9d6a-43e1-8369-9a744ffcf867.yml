@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5a002292-9d6a-43e1-8369-9a744ffcf867
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: About Us
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <p>Welcome to our organization. We are dedicated to providing exceptional services and building meaningful connections with our community.</p><p>Founded with a vision to make a difference, our team brings together diverse expertise and a shared passion for excellence. We believe in transparency, innovation, and putting our clients first.</p><p>Our mission is to deliver outstanding results while maintaining the highest standards of integrity and professionalism.</p>
+    format: basic_html
+    summary: Learn about our organization, mission, and values.

@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Flavor's implementation to display the search block with a modal trigger.
+ *
+ * Shows a search button by default. Clicking it opens the block content
+ * in a modal dialog.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('flavor/search-modal') }}
+
+{%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+  layout ? 'layout--' ~ layout|clean_class,
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <button class="search-modal__trigger" type="button" aria-label="{{ label ?: 'Search'|t }}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="11" cy="11" r="8"/>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <span class="search-modal__trigger-text">{{ label ?: 'Search'|t }}</span>
+  </button>
+
+  <dialog class="search-modal__dialog">
+    <div class="search-modal__dialog-inner">
+      <div class="search-modal__header">
+        {% if label %}
+          <h2{{ title_attributes.addClass('block__title', 'search-modal__title') }}>{{ label }}</h2>
+        {% endif %}
+        <button class="search-modal__close" type="button" aria-label="{{ 'Close search'|t }}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      {% block content %}
+        <div{{ content_attributes.addClass('block__content', 'search-modal__content') }}>
+          {{ content }}
+        </div>
+      {% endblock %}
+    </div>
+  </dialog>
+</div>

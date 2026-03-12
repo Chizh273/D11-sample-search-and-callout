@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d7fcf4a0-b342-45f4-92ca-031c374801a7
+  bundle: page
+  default_langcode: en
+default:
+  title:
+  - value: Frequently Asked Questions
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  body:
+  - value: <h2>General Questions</h2><h3>What services do you offer?</h3><p>We offer a comprehensive range of services tailored to meet your needs. Please visit our services page for detailed information.</p><h3>How can I get started?</h3><p>Getting started is easy! Simply contact our team through our contact page or give us a call.</p><h3>What are your business hours?</h3><p>Our office is open Monday through Friday, 9:00 AM to 5:00 PM.</p><h2>Account Questions</h2><h3>How do I create an account?</h3><p>Click the "Register" button at the top of the page and follow the prompts to create your account.</p><h3>How do I reset my password?</h3><p>Click "Forgot Password" on the login page and follow the instructions sent to your email.</p>
+    format: basic_html
+    summary: Answers to commonly asked questions.
